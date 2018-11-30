@@ -30,8 +30,8 @@ hr{
 	transition: all 1s;
 }
 .btn-primary:hover{
-  border-color: white;
-  border-width: 4px;
+  border-color: white !important;
+  border-width: 4px !important;
   cursor: pointer;
 }
 @media only screen and (max-width: 600px) {
