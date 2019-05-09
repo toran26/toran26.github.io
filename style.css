@@ -1,48 +1,124 @@
-html,body{
-	height: 100%;
-	max-width: 100%;
-}
-section.top{
-	background-position: center;
-	background-image:url("https://images.unsplash.com/photo-1493946947703-a0e68b050bee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ea9cb2c64e531594aac6443bf9d71e9&auto=format&fit=crop&w=500&q=60");
-	background-size: cover;
-  	height: 100%;
-  	text-align: center;
-}
+/*------------------------------GLOBAL------------------*/
 
-h1{
-	margin-top: 23%;
-	font-family: 'Orbitron', sans-serif;
-	color: #F90E08;
-}
-hr{
-	border-color: white;
-	margin-top: 30px;
-	max-width: 250px;
-}
-.btn-primary{
-	background:linear-gradient(89.89405378797574deg, rgba(243, 72, 104,1) 10.171874885757765%,rgba(242, 71, 104,1) 10.171874885757765%,rgba(158, 0, 236,1) 80.58854493002097%);
-	font-size: 1.8em;
-	border-radius: 2em;
-	padding: 10px 50px;
-	margin-top: 50px;
-	font-family: 'Lobster', cursive;
-	transition: all 1s;
-}
-.btn-primary:hover{
-  border-color: white !important;
-  border-width: 4px !important;
-  cursor: pointer;
-}
-footer{
-	color: gold;
-	margin-top: 13%;
-	font-family: 'Orbitron', sans-serif;
-}
-@media only screen and (max-width: 600px) {
-	h1{margin-top: 50%};
-	footer{ margin-top: 50%}
-} 
-#mc_embed_signup form{
-	padding-left:0
-}
+	h2,h3,h4,h5,h6{
+		-webkit-font-smoothing: antialiased;
+		text-rendering: optimizeLegibility;
+		font-family:  'segoe ui',Helvetica,Arial,sans-serif ;
+		font-weight: bold ;
+	}
+	p{
+		
+	}
+	li{
+		list-style: none;
+	}
+	a{
+		text-decoration: none !important;
+	}
+	.btn{
+		background-color: #555794 ;
+		margin-top: 20px; 
+	}
+	body{
+		overflow-x: hidden;
+		height: 100%;
+		margin: 0;
+		padding: 0; 
+  		font-family: "segoe ui", sans-serif;
+	}
+
+/*--------------- NAVBAR----------------*/
+	.sidenav {
+	  height: 100%;
+	  width: 0;
+	  position: fixed;
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  background-color: #729DA7;
+	  overflow-x: hidden;
+	  transition: 0.5s;
+	  padding-top: 60px;
+	  text-align: center;
+	}
+
+	.sidenav a {
+	  padding: 8px 8px 8px 32px;
+	  text-decoration: none;
+	  font-size: 25px;
+	  color: black;
+	  display: block;
+	  transition: 0.3s;
+	}
+
+	.sidenav a:hover {
+	  opacity: 0.4;
+	}
+
+	.sidenav .closebtn {
+	  position: absolute;
+	  top: 0;
+	 /* right: 25px;*/
+	  font-size: 60px;
+	  /*margin-left: 50px;*/
+	}
+	.sidenav img{
+		height: 80px;
+		max-width: 200px;
+		padding-bottom: 40px;
+	}
+	#main {
+	  transition: margin-left .5s ;
+	  padding: 16px;
+	}
+
+
+	@media screen and (max-height: 450px) {
+	  .sidenav {padding-top: 15px;}
+	  .sidenav a {font-size: 18px;}
+	}
+	
+
+/*-----------HERO---------------------*/
+	 .hero{
+		 	display: flex;
+		 	flex-direction: column;
+		 	flex-wrap: wrap;
+	 	    background-image:url(assets/hero.jpg); 
+            background-size: cover;
+            height: 650px;
+            background-repeat: no-repeat;
+  			background-position: center; 
+        }
+        .hero img{
+        	height:40px;
+        	max-width: 160px;
+        	cursor: pointer;
+        	position: absolute;
+        	align-self: flex-start;
+        }
+        .hero #logo{
+        	height:100px;
+        	max-width: 250px;
+        	cursor: pointer;
+    		padding-top: 2.5%;
+    		align-self: center;
+        }
+	    .hero #contact{
+	       	align-self: flex-end;
+	       	margin-right: 10px;
+	       }
+	    .hero #contact img{
+	    	margin-left: 20px;
+	    	position: relative;
+	    	height: 22px;
+	    	max-width:22px;
+	    }
+	    .hero .explore-text{
+	    	color: #000;
+    		position: relative;
+    		align-self: center;
+    		margin-top: 430px;
+    		font-size:17px;
+	    }
+ 
