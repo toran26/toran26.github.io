@@ -6,14 +6,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
   <section class="header">
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
       <a><img id="logo" src="assets/logo.png"><a>
-     <a href="#">Rooms</a> 
+     <a href="rooms.html">Rooms</a> 
      <a href="#">Food Menu</a>
      <a href="#">Get Aways</a>
      <a href="#">Special Offers</a>
@@ -36,6 +37,8 @@
          <span class="check1"><strong>BOOK NOW &#9825;</strong></span>
     </div></a>
  </section> 
+ 
+<!------------------ ROOMS SECTION ----------------------->
  <section class="services">
    <div id="service-item">
      <h2>OUR ROOMS</h2>
@@ -61,13 +64,87 @@
    </div>
  </section>
  
- <!------------DISCOUNT---------------->
+<!------------ SPECIAL DISCOUNT SECTION ---------------->
  <section class="special">
    <div>
      <p>GET SPECIAL DISCOUNT ON DIRECT BOOKINGS</p>
    </div>
  </section>
-<!------------------ rooms section ----------------------->
+
+<!-------------------------- GALLERY SECTION ---------------------- -->
+  <section class="gallery">
+    <div class="gallery-display">
+      <figure class=" gallery__item--1">
+        <img src="assets/gallery1.jpg" class="gallery__img" alt="Image 1">
+      </figure>
+      <figure class=" gallery__item--2">
+        <img src="assets/gallery2.jpg" class="gallery__img" alt="Image 2">
+      </figure>
+      <figure class="gallery__item--3">
+        <img src="assets/gallery3.jpg" class="gallery__img" alt="Image 3">
+      </figure>
+      <figure class=" gallery__item--4">
+        <img src="assets/gallery1.jpg" class="gallery__img" alt="Image 1">
+      </figure>
+    </div>
+    <div class="gallery-intro">
+      <p style="font-size: 25px;font-family: Segoe UI Light; margin-bottom: 20px;">
+          "pictures are created</br>
+          memories are preserved</br>
+          forgotten moments</br>
+          are relived again,</br>
+          expressed once again." </p>
+      <button>Gallery</button>
+    </div>
+  </section>
+
+<!---------------------------TESTIMONIALS------------------------>
+  <section class="testimonials">
+    <h2 align="center">TESTIMONIALS</h2>
+    <div class="testimonial-item">
+      <img src="assets/ram.jpg">
+      <p style="font-size: 20px;font-family: Segoe UI Light; margin:10px 40px;">
+        me and my family had a great time <br>    
+        together around this place   
+        and hoping to be back again. <br>
+        <span style="font-style: italic;">Ram Bahadur,USA</span>
+      </p>
+    </div>
+     <div class="testimonial-item">
+      <p style="font-size: 20px;font-family: Segoe UI Light; margin: 10px 40px">
+        well I got what they promised me for<br> 
+        so I enjoyed my stay at this place.<br>
+       <span style="font-style: italic;">Sita Kumari,Janakpur</span> </p>
+       <img src="assets/sita.jpg">
+    </div>
+  </section>
+<!-------------------------- FOOTER ---------------------->
+  <section class="footer">
+    <div class="footer-moto">
+      <p style="font-size: 20px; margin: 40px 0">"We believe in the need <br> 
+        for travel but of course <br>
+        with joy and comfort."
+      </p>
+    </div>
+    <div class="footer-intro">
+      <span class="hotel-name">HOTEL<br>DELA MOUNT</span>
+      <p>Pokhara Metropolitan City Ward No-6,<br>Lakeside, Nepal</p>
+      <span id="copyright">
+        <p>&copy;2019 DelaMount. All Rights Reserved.</p>
+      </span>
+    </div>
+    <div class="footer-contact">
+      <span id="footer-underline">
+        <p><u>delamountannapurna@gmail.com</u></p>
+        <p><u>0611235 / +977-98565231</u></p>
+      </span>
+      <p>FOLLOW US :</p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a> 
+    </div>
+  </section>
+
 
 <script type="text/javascript" src="script.js"></script>
 </body>
