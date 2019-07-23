@@ -41,6 +41,7 @@
 		border-style: none;
 		color: #fff;
 		font-size: 17px;
+		cursor: pointer;
 	}
 /*--------------- NAVBAR----------------*/
 	.sidenav {
@@ -243,7 +244,11 @@
 		align-self: center; 
 		text-align: center;
 	}
-
+	.gallery-intro p{
+		font-size: 25px;
+		font-family: Segoe UI Light; 
+		margin-bottom: 60px;
+	}
 /*--------------------------TESTIMONIALS---------------------*/
 
 	.testimonials{
@@ -265,8 +270,9 @@
 /*----------------------------FOOTER---------------------------------*/
 	.footer{
 		background-color:#CDCACA;
-		display: grid;
-  		grid-template-columns: auto auto auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
 		text-align: center;
 		padding-top:40px;
 	}
@@ -281,10 +287,8 @@
 	   text-decoration:none;
 	   border-bottom: 1px solid black;
 	}
-	.footer .copyright{
-		grid-column: 2;
-	}
-	.footer .copyright p{
+	.footer .footer-intro #copyright p{
+		margin-top: 65px;
 		border-top: 1px solid black;
 	}
 	.fa {
