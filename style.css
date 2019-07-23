@@ -265,9 +265,8 @@
 /*----------------------------FOOTER---------------------------------*/
 	.footer{
 		background-color:#CDCACA;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
+		display: grid;
+  		grid-template-columns: auto auto auto;
 		text-align: center;
 		padding-top:40px;
 	}
@@ -282,8 +281,10 @@
 	   text-decoration:none;
 	   border-bottom: 1px solid black;
 	}
-	.footer .footer-intro #copyright p{
-		margin-top: 65px;
+	.footer .copyright{
+		grid-column: 2;
+	}
+	.footer .copyright p{
 		border-top: 1px solid black;
 	}
 	.fa {
