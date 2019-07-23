@@ -11,8 +11,8 @@
 		font-family: segoe ui SemiBold;
 	}
 	h3 {
-		font-size: 20px;
-		font-family: segoe ui SemiBold;
+		font-size: 25px;
+		font-family: segoe ui light;
 	}
 	p{
 		
@@ -117,7 +117,7 @@
         	height:100px;
         	max-width: 250px;
         	cursor: pointer;
-    		padding-top: 2.5%;
+    		margin-top: 50px;
     		align-self: center;
         }
 	    .hero #contact{
@@ -267,6 +267,59 @@
 		justify-content: center;
 		margin:40px 0px;
 	}
+
+/*---------------------------- GET AWAYS ------------------------------*/
+	.getaways{
+		margin:40px 0 50px 0;
+	}
+	.getaway-wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.getaway-container {
+	  position: relative;
+	  width: 50%;
+	  max-width: 350px;
+	  margin:5px;
+	}
+
+	.getaway-image {
+	  display: block;
+	  width: 100%;
+	  height: 450px;
+	}
+
+	.getaway-overlay {
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  background-color: #0D5461;
+	  overflow: hidden;
+	  width: 100%;
+	  height: 0;
+	  transition: .5s ease;
+	  opacity:0.8;
+	}
+
+	.getaway-container:hover .getaway-overlay {
+	  height: 100%;
+	}
+
+	.getaway-text {
+	  color: white;
+	  font-size: 20px;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	  font-family: Segoe UI Light;
+	}
+
 /*----------------------------FOOTER---------------------------------*/
 	.footer{
 		background-color:#CDCACA;
